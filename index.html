@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crie seu site profissional sem programar com Wix</title>
+<meta name="description" content="Transforme sua ideia em um site profissional com Wix. Crie com IA, escolha um template e personalize tudo visualmente. Comece grátis.">
+
+<meta property="og:title" content="Crie seu site profissional sem programar com Wix">
+<meta property="og:description" content="Transforme sua ideia em um site profissional com Wix. Crie com IA, escolha um template e personalize tudo visualmente. Comece grátis.">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  *,*::before,*::after{box-sizing:border-box;border-width:0;border-style:solid}
+  html{min-height:100%;scroll-behavior:smooth}
+  body{margin:0;min-height:100vh;overflow-x:hidden;overflow-y:auto;padding:0}
+  body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-feature-settings:"ss01","cv11";text-rendering:optimizeLegibility}
+  .sales-preview{display:block!important;height:auto!important;min-height:100vh!important;overflow:visible!important;width:100%!important}
+  .sales-preview>[data-section-kind]{display:block!important;position:relative}
+  h1,h2,h3,h4{font-weight:800!important;letter-spacing:-0.025em}
+  :where(h1,h2,h3,h4,h5,h6,p,blockquote,figure,dl,dd){margin:0}
+  :where(ul,ol){margin:0;padding:0}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:inherit}
+  button,input,textarea,select{font:inherit}
+  details summary::-webkit-details-marker{display:none}
+.sales-preview .sales-smart-grid,
+.sales-preview .sales-testimonials-grid,
+.sales-preview[data-sales-device="desktop"] .sales-testimonials-grid,
+.sales-preview[data-sales-device="desktop"] .sales-smart-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .sales-preview[data-sales-device="desktop"] .sales-smart-grid,
+  .sales-preview:not([data-sales-device="mobile"]) .sales-smart-grid {
+    grid-template-columns: var(--sales-desktop-grid-template, repeat(2, minmax(0, 1fr)));
+  }
+
+  .sales-preview[data-sales-device="desktop"] .sales-testimonials-grid,
+  .sales-preview:not([data-sales-device="mobile"]) .sales-testimonials-grid {
+    grid-template-columns: var(--sales-testimonials-desktop-grid-template, repeat(2, minmax(0, 1fr)));
+  }
+}
+
+.sales-media-frame {
+  max-width: 100%;
+}
+
+.sales-preview[data-sales-device="desktop"] .sales-media-frame,
+.sales-preview:not([data-sales-device="mobile"]) .sales-media-frame {
+  max-width: min(100%, 580px) !important;
+}
+
+.sales-pricing-section,
+.sales-pricing-card {
+  overflow: visible !important;
+  position: relative;
+  z-index: 2;
+}
+
+.sales-pricing-media {
+  margin-top: calc(clamp(-104px, -9.5vw, -58px) + var(--sales-pricing-image-offset-y, 0px)) !important;
+  margin-bottom: clamp(-10px, -1.2vw, -4px) !important;
+  position: relative;
+  z-index: 3 !important;
+  transform: translateY(calc(clamp(-12px, -1.4vw, -6px) + var(--sales-pricing-image-offset-y, 0px)));
+  filter: drop-shadow(0 22px 28px rgba(0, 0, 0, 0.22));
+}
+
+.sales-rich-text :where(h1, h2, h3, p) {
+  font-family: inherit;
+  font-weight: inherit !important;
+  letter-spacing: inherit;
+  margin: 0;
+}
+
+.sales-rich-text h1 {
+  font-size: var(--sales-rich-text-h1-size, 1.35em);
+  line-height: var(--sales-rich-text-heading-line-height, 1.12);
+}
+
+.sales-rich-text h2 {
+  font-size: var(--sales-rich-text-h2-size, 1.18em);
+  line-height: var(--sales-rich-text-heading-line-height, 1.18);
+}
+
+.sales-rich-text h3 {
+  font-size: var(--sales-rich-text-h3-size, 1.05em);
+  line-height: var(--sales-rich-text-heading-line-height, 1.22);
+}
+
+.sales-rich-text .ql-align-center {
+  text-align: center;
+}
+
+.sales-rich-text .ql-align-left {
+  text-align: left;
+}
+
+.sales-rich-text .ql-align-right {
+  text-align: right;
+}
+
+.sales-rich-text .ql-align-justify {
+  text-align: justify;
+}
+
+.sales-preview[data-sales-device="desktop"] .sales-hero-headline,
+.sales-preview:not([data-sales-device="mobile"]) .sales-hero-headline {
+  font-size: calc(var(--sales-hero-title-size, 32px) * 1.18) !important;
+}
+
+.sales-preview[data-sales-device="desktop"] .sales-hero-subheadline,
+.sales-preview:not([data-sales-device="mobile"]) .sales-hero-subheadline {
+  font-size: calc(var(--sales-hero-subtitle-size, 17px) * 1.1) !important;
+}
+
+.sales-checklist-item .sales-rich-text {
+  font-size: inherit !important;
+}
+
+.sales-countdown-grid {
+  --sales-countdown-cell-block-padding: calc(clamp(8px, 2.4vw, 14px) * var(--sales-countdown-scale, 1));
+  --sales-countdown-cell-inline-padding: calc(clamp(4px, 1.8vw, 10px) * var(--sales-countdown-scale, 1));
+  --sales-countdown-gap: calc(clamp(4px, 1.6vw, 10px) * var(--sales-countdown-scale, 1));
+  --sales-countdown-max-cell-width: calc(
+    (100cqw - (var(--sales-countdown-columns, 4) - 1) * var(--sales-countdown-gap)) /
+      var(--sales-countdown-columns, 4)
+  );
+  container-type: inline-size;
+  display: flex;
+  gap: var(--sales-countdown-gap);
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.sales-countdown-cell {
+  flex: 0 1 min(
+    max(
+      calc(92px * var(--sales-countdown-scale, 1)),
+      calc(var(--sales-countdown-number-size, 34px) * var(--sales-countdown-scale, 1) * 1.55)
+    ),
+    var(--sales-countdown-max-cell-width)
+  );
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.sales-countdown-value {
+  font-size: clamp(
+    12px,
+    min(
+      calc(var(--sales-countdown-number-size, 34px) * var(--sales-countdown-scale, 1)),
+      calc(
+        (var(--sales-countdown-max-cell-width) - (var(--sales-countdown-cell-inline-padding) * 2)) /
+          1.14
+      )
+    ),
+    calc(var(--sales-countdown-number-size, 34px) * var(--sales-countdown-scale, 1))
+  ) !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: clip !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+.sales-countdown-cell [data-label-unit] {
+  font-size: clamp(9px, calc(var(--sales-countdown-label-size, 11px) * var(--sales-countdown-scale, 1)), 38px) !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+.sales-button-cta {
+  cursor: pointer;
+  min-height: 52px;
+  overflow-wrap: anywhere;
+  position: relative;
+  z-index: 2;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 180ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sales-button-section {
+  overflow: visible !important;
+  position: relative;
+  z-index: 2;
+}
+
+.sales-preview[data-sales-device="mobile"] .sales-button-cta[data-full-width="true"] {
+  --sales-button-full-max-width: 100%;
+}
+
+.sales-preview[data-sales-device="desktop"] .sales-button-cta[data-full-width="true"],
+.sales-preview:not([data-sales-device="mobile"]) .sales-button-cta[data-full-width="true"] {
+  --sales-button-full-max-width: 560px;
+}
+
+.sales-button-cta[data-button-style="step"] {
+  box-shadow:
+    0 7px 0 var(--sales-button-step-color),
+    0 16px 28px rgba(0, 0, 0, 0.18);
+  transform: translateY(-3px);
+}
+
+.sales-button-cta[data-button-style="step"]:active {
+  box-shadow:
+    0 2px 0 var(--sales-button-step-color),
+    0 8px 16px rgba(0, 0, 0, 0.16);
+  transform: translateY(2px);
+}
+
+.sales-button-cta[data-animated="true"] {
+  animation: sales-button-pulse 2400ms cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.sales-button-cta[data-animated="true"][data-button-style="step"] {
+  animation-name: sales-button-step-pulse;
+}
+
+.sales-arrows {
+  --sales-arrow-move-x: 0px;
+  --sales-arrow-move-y: 8px;
+}
+
+.sales-arrows[data-direction="up"] {
+  --sales-arrow-move-y: -8px;
+}
+
+.sales-arrows[data-direction="left"] {
+  --sales-arrow-move-x: -8px;
+  --sales-arrow-move-y: 0px;
+}
+
+.sales-arrows[data-direction="right"] {
+  --sales-arrow-move-x: 8px;
+  --sales-arrow-move-y: 0px;
+}
+
+.sales-arrows[data-animated="true"][data-animation-style="flow"] .sales-arrow-icon {
+  animation: sales-arrow-flow 1200ms cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.sales-arrows[data-animated="true"][data-animation-style="bounce"] .sales-arrow-icon {
+  animation: sales-arrow-bounce 900ms cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+.sales-arrows[data-animated="true"][data-animation-style="pulse"] .sales-arrow-icon {
+  animation: sales-arrow-pulse 1050ms ease-in-out infinite;
+}
+
+.sales-purchase-toast {
+  align-items: flex-start;
+  background: var(--sales-purchase-bg, #111827);
+  border: 1px solid color-mix(in srgb, var(--sales-purchase-text, #ffffff) 16%, transparent);
+  border-radius: 14px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.28);
+  color: var(--sales-purchase-text, #ffffff);
+  display: flex;
+  gap: 12px;
+  max-width: min(calc(100vw - 28px), 360px);
+  min-width: min(calc(100vw - 28px), 300px);
+  opacity: 0;
+  padding: 14px 16px;
+  pointer-events: none;
+  position: fixed;
+  transform: translate3d(0, 12px, 0) scale(0.98);
+  transition:
+    opacity 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 2147483000;
+}
+
+.sales-purchase-toast[data-visible="true"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.sales-purchase-toast[data-position="bottom-left"] {
+  bottom: 18px;
+  left: 18px;
+}
+
+.sales-purchase-toast[data-position="bottom-right"] {
+  bottom: 18px;
+  right: 18px;
+}
+
+.sales-purchase-toast[data-position="top-left"] {
+  left: 18px;
+  top: 18px;
+}
+
+.sales-purchase-toast[data-position="top-right"] {
+  right: 18px;
+  top: 18px;
+}
+
+.sales-purchase-toast-icon {
+  align-items: center;
+  background: var(--sales-purchase-accent, #22c55e);
+  border-radius: 999px;
+  color: #ffffff;
+  display: flex;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 900;
+  height: 28px;
+  justify-content: center;
+  line-height: 1;
+  margin-top: 1px;
+  width: 28px;
+}
+
+.sales-purchase-toast-content {
+  min-width: 0;
+}
+
+.sales-purchase-toast-title {
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.sales-purchase-toast-message {
+  font-size: 13px;
+  line-height: 1.35;
+  margin-top: 2px;
+  opacity: 0.9;
+}
+
+.sales-purchase-toast-time {
+  color: var(--sales-purchase-accent, #22c55e);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 7px;
+}
+
+@media (hover: hover) {
+  .sales-button-cta:not([data-animated="true"]):hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+  }
+
+  .sales-button-cta:not([data-animated="true"])[data-button-style="step"]:hover {
+    box-shadow:
+      0 9px 0 var(--sales-button-step-color),
+      0 20px 32px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes sales-arrow-flow {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: translate(0, 0) scale(0.96);
+  }
+  45% {
+    opacity: 1;
+    transform: translate(var(--sales-arrow-move-x), var(--sales-arrow-move-y)) scale(1.08);
+  }
+}
+
+@keyframes sales-arrow-bounce {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(var(--sales-arrow-move-x), var(--sales-arrow-move-y)) scale(1.06);
+  }
+}
+
+@keyframes sales-arrow-pulse {
+  0%,
+  100% {
+    opacity: 0.68;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes sales-button-pulse {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.025);
+  }
+}
+
+@keyframes sales-button-step-pulse {
+  0%,
+  100% {
+    transform: translateY(-3px) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.018);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sales-button-cta,
+  .sales-arrows .sales-arrow-icon,
+  .sales-purchase-toast {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+	</style>
+
+</head>
+<body>
+
+<div style="background-color:#faf8f3;color:#1f1d1a;font-family:&#x27;Inter&#x27;, system-ui, sans-serif;min-height:100%;scroll-behavior:smooth;width:100%" class="sales-preview min-h-full w-full" data-sales-device="desktop"><div id="inicio" data-section-kind="hero"><section style="padding:64px 24px 28px;padding-bottom:28px;text-align:center;background:radial-gradient(ellipse 78% 52% at 50% 12%, rgba(0, 100, 250, 0.208) 0%, transparent 100%), #0e0508;color:rgb(255, 255, 255);overflow:visible;position:relative"><div style="max-width:800px;margin:0 auto;position:relative;z-index:1"><div class="sales-rich-text sales-hero-headline" style="font-family:&#x27;Inter&#x27;, system-ui, sans-serif;color:rgb(255, 255, 255);--sales-hero-title-size:32px;font-size:var(--sales-hero-title-size);line-height:1.15;margin-bottom:12px;font-weight:800;letter-spacing:-0.01em"><p>CREATE WITHOUT STARTING FROM SCRATCH: Get Your Idea Online Without Months of Waiting</p></div><div class="sales-rich-text sales-hero-subheadline" style="--sales-hero-subtitle-size:17px;color:#ffffff;font-size:var(--sales-hero-subtitle-size);line-height:1.45;margin-bottom:28px;opacity:0.9"><p>The tool that turns your idea into a professional website in minutes, even if you don't know how to code.</p></div><div class="sales-media-frame sales-hero-media" style="max-width:100%;width:62.5%;margin:0 auto 0"><img loading="eager" decoding="sync" fetchpriority="high" src="data:image/png;base64,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" alt="" style="width:100%;height:auto;display:block"/></div></div></section></div><div id="botao" data-section-kind="button"><section class="sales-button-section" style="padding:20px 24px 20px;background:#ffffff;color:#1f1d1a;overflow:visible;position:relative;z-index:2"><div style="max-width:800px;margin:0 auto;display:flex;justify-content:center"><a href="#oferta" class="sales-button-cta" data-button-style="step" data-animated="true" data-full-width="false" style="background-color:#0064FA;color:#ffffff;padding:16px 32px;border-radius:8px;font-size:16px;font-weight:600;display:inline-flex;text-decoration:none;transition:opacity 0.2s;align-items:center;border:1px solid transparent;flex-direction:column;justify-content:center;line-height:1.2;max-width:100%;text-align:center;--sales-button-color:#0064FA;--sales-button-text-color:#ffffff;--sales-button-step-color:color-mix(in srgb, #0064FA 68%, black)"><span>CREATE YOUR FREE WEBSITE</span><span style="display:block;font-size:13px;font-weight:600;line-height:1.15;margin-top:4px;opacity:0.82">Get started instantly. No credit card required.</span></a></div></section></div><div id="checklist" data-section-kind="checklist"><section style="padding:32px 24px 32px;background:#ffffff;text-align:left;color:#1f1d1a"><div style="max-width:800px;margin:0 auto"><div class="sales-rich-text" style="font-family:&#x27;Inter&#x27;, system-ui, sans-serif;color:#1f1d1a;font-size:28px;font-weight:700;letter-spacing:-0.025em;margin-bottom:24px;--sales-rich-text-h1-size:1em;--sales-rich-text-h2-size:1em;--sales-rich-text-h3-size:1em;--sales-rich-text-heading-line-height:1.14;max-width:100%;line-height:1.14;overflow-wrap:anywhere;text-wrap:balance"><p>This is for you if:</p></div><div class="sales-smart-grid" style="display:grid;justify-items:start;gap:12px;--sales-desktop-grid-template:minmax(0, 1fr)"><div class="sales-checklist-item" style="display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid rgba(0,0,0,0.1);text-align:left;font-size:15px;font-weight:600;justify-content:flex-start;width:100%"><span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;background-color:#0064FA;color:#ffffff;font-size:13px;font-weight:800;line-height:1">✓</span><span class="sales-checklist-item-text"><div class="sales-rich-text"><p>You’ve thought about creating a website but got stuck on the technical side.</p></div></span></div><div class="sales-checklist-item" style="display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid rgba(0,0,0,0.1);text-align:left;font-size:15px;font-weight:600;justify-content:flex-start;width:100%"><span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;background-color:#0064FA;color:#ffffff;font-size:13px;font-weight:800;line-height:1">✓</span><span class="sales-checklist-item-text"><div class="sales-rich-text"><p>You’re losing customers because you have nowhere to showcase your work.</p></div></span></div><div class="sales-checklist-item" style="display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid rgba(0,0,0,0.1);text-align:left;font-size:15px;font-weight:600;justify-content:flex-start;width:100%"><span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;background-color:#0064FA;color:#ffffff;font-size:13px;font-weight:800;line-height:1">✓</span><span class="sales-checklist-item-text"><div class="sales-rich-text"><p>You’ve tried building a website before and gave up along the way.</p></div></span></div><div class="sales-checklist-item" style="display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid rgba(0,0,0,0.1);text-align:left;font-size:15px;font-weight:600;justify-content:flex-start;width:100%"><span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;background-color:#0064FA;color:#ffffff;font-size:13px;font-weight:800;line-height:1">✓</span><span class="sales-checklist-item-text"><div class="sales-rich-text"><p>You want to appear on Google when people search for your services.</p></div></span></div></div></div></section></div><div id="conteudo" data-section-kind="about"><section style="padding:64px 24px 64px;background:#ffffff;text-align:left;color:#1f1d1a"><div style="max-width:800px;margin:0 auto"><div class="sales-rich-text" style="font-family:&#x27;Inter&#x27;, system-ui, sans-serif;color:#1f1d1a;font-size:36px;font-weight:700;letter-spacing:-0.025em;margin-bottom:20px"><p>O vazio digital que afasta clientes</p></div><div class="sales-rich-text" style="font-size:18px;line-height:1.7"><p>Você tem um talento, um serviço ou um produto que resolve a vida de alguém. Mas, quando essa pessoa te procura no Google, ela não te encontra. <strong>Ela encontra quem tem um site.</strong></p><p>O problema tem nome: <strong>Vazio Digital</strong>. É a ausência de presença online que faz você parecer menor do que é, que impede o cliente de confiar antes mesmo de te conhecer.</p><p>Você já tentou aprender programação, pediu ajuda a um sobrinho, baixou mil ferramentas. Nada foi pra frente porque <u>você não tinha um caminho simples para criar</u>.</p></div></div></section></div><div id="conteudo-2" data-section-kind="about"><section style="padding:64px 24px 64px;background:#faf8f3;text-align:left;color:#1f1d1a"><div style="max-width:800px;margin:0 auto"><div class="sales-rich-text" style="font-family:&#x27;Inter&#x27;, system-ui, sans-serif;color:#1f1d1a;font-size:36px;font-weight:700;letter-spacing:-0.025em;margin-bottom:20px"><h3>The digital gap that drives customers away</h3><p><br></p></div><div class="sales-rich-text" style="font-size:18px;line-height:1.7"><p>You have a talent, a service, or a product that can make someone’s life better.</p><p>But when that person searches for you on Google, they can’t find you. <strong>They find someone who has a website.</strong></p><p>The problem has a name: <strong>digital invisibility.</strong> It’s the lack of an online presence that can make you look smaller than you really are, and prevents potential customers from trusting you before they even meet you.</p><p>Maybe you’ve tried learning how to code, asked a friend for help, or downloaded countless tools. Nothing moved forward because <strong>you didn’t have a simple path to create.</strong></p></div></div></section></div><div id="contador" data-section-kind="countdown"><section style="padding:42px 24px 42px;background:#0b0b0d;text-align:center;color:#ffffff"><div style="max-width:640px;margin:0 auto"><div class="sales-countdown" data-countdown-target="2026-08-26T13:24" data-countdown-mode="automatic" data-countdown-duration-seconds="1200" data-countdown-storage-key="sales-countdown:e7f2c5a6-95ec-439c-b33a-5b376591074c:1200" data-countdown-expired-text="Oferta encerrada" style="text-align:center"><div class="sales-rich-text" style="font-family:&#x27;Inter&#x27;, system-ui, sans-serif;color:#ffffff;font-size:30px;font-weight:700;letter-spacing:0;margin-bottom:10px;line-height:1.12;overflow-wrap:anywhere;text-align:center"><h3>Every day without a website is a customer who finds your competitor before you.</h3><p><br></p></div><div class="sales-rich-text" style="color:#d8d4e3;font-size:16px;line-height:1.5;margin:0 0 24px;opacity:0.88;overflow-wrap:anywhere;text-align:center"><p><strong>The best time to get started is now.</strong></p><p>This special opportunity ends in:</p></div><div class="sales-countdown-grid" style="--sales-countdown-border-color:rgba(255,255,255,0.14);--sales-countdown-accent-color:#e91e63;--sales-countdown-columns:2;--sales-countdown-number-size:34px;--sales-countdown-label-size:11px;--sales-countdown-scale:1"><div class="sales-countdown-cell" style="background-color:rgba(233,30,99,0.16);border:1px solid rgba(255,255,255,0.14);border-radius:14px;min-width:0;overflow:hidden;padding:var(--sales-countdown-cell-block-padding) var(--sales-countdown-cell-inline-padding);text-align:center"><span class="sales-countdown-value" data-unit="minutes" style="color:#e91e63;display:block;font-family:&#x27;Inter&#x27;, system-ui, sans-serif;font-variant-numeric:tabular-nums;font-weight:900;line-height:1;white-space:nowrap;word-break:keep-all">20</span><span data-label-unit="minutes" style="color:#ffffff;display:block;font-weight:800;letter-spacing:0;line-height:1;margin-top:10px;opacity:0.72;white-space:nowrap;word-break:keep-all">MIN</span></div><div class="sales-countdown-cell" style="background-color:rgba(233,30,99,0.16);border:1px solid rgba(255,255,255,0.14);border-radius:14px;min-width:0;overflow:hidden;padding:var(--sales-countdown-cell-block-padding) var(--sales-countdown-cell-inline-padding);text-align:center"><span class="sales-countdown-value" data-unit="seconds" style="color:#e91e63;display:block;font-family:&#x27;Inter&#x27;, system-ui, sans-serif;font-variant-numeric:tabular-nums;font-weight:900;line-height:1;white-space:nowrap;word-break:keep-all">00</span><span data-label-unit="seconds" style="color:#ffffff;display:block;font-weight:800;letter-spacing:0;line-height:1;margin-top:10px;opacity:0.72;white-space:nowrap;word-break:keep-all">SEC</span></div></div><p class="sales-countdown-expired" style="color:#e91e63;display:none;font-size:16px;font-weight:800;margin:18px 0 0">Oferta encerrada</p></div></div></section></div><div id="oferta" data-section-kind="pricing"><section class="sales-pricing-section" style="padding:24px 24px 24px;text-align:center;background:#faf8f3;color:#ffffff;position:relative;z-index:2"><div style="max-width:800px;margin:0 auto"><div class="sales-pricing-card" style="max-width:520px;margin:0 auto;padding:20px 32px;border:1.5px solid rgba(255,255,255,0.14);border-radius:16px;background-color:#0e0508;color:#ffffff;overflow:visible;position:relative;z-index:2"><div class="sales-rich-text" style="font-family:&#x27;Inter&#x27;, system-ui, sans-serif;font-size:32px;margin-bottom:12px;font-weight:700;letter-spacing:-0.025em"><h3>Your idea deserves a place on the internet.</h3><p><br></p></div><div class="sales-rich-text" style="font-size:16px;margin-bottom:12px;opacity:0.85"><p>Start with AI. Choose a template.</p><p> Customize it. Publish it.</p><p>Wix gives you the tools to create a professional website without coding, and the freedom to bring your idea to life.</p></div><a href="#" class="sales-button-cta" data-button-style="step" data-animated="true" data-full-width="true" style="background-color:#ffffff;color:#1f1d1a;padding:18px 40px;border-radius:8px;font-size:18px;font-weight:600;display:inline-flex;text-decoration:none;transition:opacity 0.2s;align-items:center;border:1px solid transparent;flex-direction:column;justify-content:center;line-height:1.2;max-width:var(--sales-button-full-max-width, 100%);text-align:center;width:100%;--sales-button-color:#ffffff;--sales-button-text-color:#1f1d1a;--sales-button-step-color:color-mix(in srgb, #ffffff 68%, black)"><span>GET MY WEBSITE ONLINE</span><span style="display:block;font-size:13px;font-weight:600;line-height:1.15;margin-top:4px;opacity:0.82">Choose the plan that fits your business.</span></a></div></div></section></div><div id="garantia" data-section-kind="guarantee"><section style="padding:64px 24px 64px;background:#faf8f3;text-align:center;color:#1f1d1a"><div style="max-width:800px;margin:0 auto"><div style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:128px;height:128px;margin-bottom:28px"><div aria-hidden="true" style="position:absolute;inset:-10px;border-radius:50%;border:2px dashed #0064FA;opacity:0.45"></div><div style="position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 30% 25%, rgba(255,255,255,0.22), rgba(255,255,255,0) 60%), #0064FA;color:#1e76fb;box-shadow:0 14px 30px rgba(0,0,0,0.18), inset 0 -6px 14px rgba(0,0,0,0.18), inset 0 2px 6px rgba(255,255,255,0.25);font-family:&#x27;Inter&#x27;, system-ui, sans-serif;line-height:1"><span style="font-size:44px;font-weight:900;letter-spacing:-0.02em">14</span><span style="font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-top:2px;opacity:0.9">DIAS</span></div></div><div class="sales-rich-text" style="font-family:&#x27;Inter&#x27;, system-ui, sans-serif;color:#1f1d1a;font-size:32px;font-weight:700;letter-spacing:-0.025em;margin-bottom:16px"><p>14-Day Money-Back Guarantee</p></div><div class="sales-rich-text" style="font-size:18px;line-height:1.6;opacity:0.85"><h3>Try Wix with peace of mind.</h3><p>If you decide Wix isn't the right fit for your needs, you can request a refund within the applicable 14-day period, subject to Wix's terms and conditions.</p><p><br></p><p><strong>No complicated process. Just the confidence to choose the plan that's right for you.</strong></p></div></div></section></div><div id="faq" data-section-kind="faq"><section style="padding:40px 24px 40px;background:#ffffff;text-align:left;color:#1f1d1a"><div style="max-width:800px;margin:0 auto"><div class="sales-rich-text" style="font-family:&#x27;Inter&#x27;, system-ui, sans-serif;color:#1f1d1a;font-size:36px;font-weight:700;letter-spacing:-0.025em;margin-bottom:32px"><p>Frequently Asked Questions</p></div><div><details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:20px 0"><summary style="font-size:18px;font-weight:600;cursor:pointer;list-style:none">How do I get started with Wix?</summary><div class="sales-rich-text" style="font-size:16px;line-height:1.6;margin-top:12px;opacity:0.85"><p>Click the button on this page to visit Wix. From there, you can choose the plan that best fits your needs and start building your website.</p></div></details><details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:20px 0"><summary style="font-size:18px;font-weight:600;cursor:pointer;list-style:none">Do I need to know how to code?</summary><div class="sales-rich-text" style="font-size:16px;line-height:1.6;margin-top:12px;opacity:0.85"><p>No. Wix is designed to let you build and customize your website visually, without needing programming skills.</p></div></details><details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:20px 0"><summary style="font-size:18px;font-weight:600;cursor:pointer;list-style:none">How long does it take to build a website?</summary><div class="sales-rich-text" style="font-size:16px;line-height:1.6;margin-top:12px;opacity:0.85"><p>It depends on your project. With Wix's AI tools and professional templates, you can create the initial structure quickly and customize it at your own pace.</p></div></details><details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:20px 0"><summary style="font-size:18px;font-weight:600;cursor:pointer;list-style:none">Can I create a website on my phone?</summary><div class="sales-rich-text" style="font-size:16px;line-height:1.6;margin-top:12px;opacity:0.85"><p>Yes. Wix offers mobile tools that allow you to manage and edit your website from your mobile device, as well as from a computer.</p></div></details><details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:20px 0"><summary style="font-size:18px;font-weight:600;cursor:pointer;list-style:none">Can I create an online store?</summary><div class="sales-rich-text" style="font-size:16px;line-height:1.6;margin-top:12px;opacity:0.85"><p>Yes. Wix offers eCommerce tools that allow you to showcase products, manage orders and accept payments online, depending on the plan you choose.</p></div></details><details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:20px 0"><summary style="font-size:18px;font-weight:600;cursor:pointer;list-style:none">Can I use my own domain?</summary><div class="sales-rich-text" style="font-size:16px;line-height:1.6;margin-top:12px;opacity:0.85"><p>Yes. Wix supports custom domains. Some plans may include a free domain for the first year, subject to the applicable terms.</p></div></details><details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:20px 0"><summary style="font-size:18px;font-weight:600;cursor:pointer;list-style:none">Can I change my website after publishing it?</summary><div class="sales-rich-text" style="font-size:16px;line-height:1.6;margin-top:12px;opacity:0.85"><p>Yes. You can continue editing and updating your website after it has been published.</p></div></details></div></div></section></div><div id="rodape" data-section-kind="footer"><footer style="padding:32px 24px 32px;text-align:center;font-size:14px;background:#faf8f3;color:#1f1d1a;font-family:&#x27;Inter&#x27;, system-ui, sans-serif"><div style="max-width:800px;margin:0 auto"><div class="sales-rich-text"><p>© 2026 Wix. All rights reserved.</p></div></div></footer></div></div>
+
+<script>
+(function () {
+  function pad(value) {
+    return String(Math.max(0, value)).padStart(2, "0");
+  }
+
+  function updateCountdown(countdown) {
+    var target = resolveCountdownTarget(countdown);
+    var total = Number.isFinite(target) ? Math.max(0, target - Date.now()) : 0;
+    var totalSeconds = Math.floor(total / 1000);
+    var values = {
+      days: Math.floor(totalSeconds / 86400),
+      hours: Math.floor((totalSeconds % 86400) / 3600),
+      minutes: Math.floor((totalSeconds % 3600) / 60),
+      seconds: totalSeconds % 60
+    };
+
+    Object.keys(values).forEach(function (unit) {
+      var el = countdown.querySelector('[data-unit="' + unit + '"]');
+      if (el) el.textContent = pad(values[unit]);
+    });
+
+    var expired = countdown.querySelector(".sales-countdown-expired");
+    if (expired) expired.style.display = total <= 0 ? "block" : "none";
+  }
+
+  function resolveCountdownTarget(countdown) {
+    var resolved = Number(countdown.getAttribute("data-countdown-resolved-target") || "0");
+    if (Number.isFinite(resolved) && resolved > 0) return resolved;
+
+    var mode = countdown.getAttribute("data-countdown-mode") || "fixed";
+    if (mode === "automatic") {
+      var key = countdown.getAttribute("data-countdown-storage-key") || "";
+      var stored = 0;
+      try {
+        stored = key ? Number(window.localStorage.getItem(key) || "0") : 0;
+      } catch (_error) {
+        stored = 0;
+      }
+      if (Number.isFinite(stored) && stored > 0) {
+        countdown.setAttribute("data-countdown-resolved-target", String(stored));
+        return stored;
+      }
+
+      var durationSeconds = Number(countdown.getAttribute("data-countdown-duration-seconds") || "1200");
+      if (!Number.isFinite(durationSeconds) || durationSeconds <= 0) durationSeconds = 1200;
+      var automaticTarget = Date.now() + Math.round(durationSeconds * 1000);
+      countdown.setAttribute("data-countdown-resolved-target", String(automaticTarget));
+      try {
+        if (key) window.localStorage.setItem(key, String(automaticTarget));
+      } catch (_error) {
+        // localStorage can be unavailable in strict browser modes; the in-page target still works.
+      }
+      return automaticTarget;
+    }
+
+    var targetValue = countdown.getAttribute("data-countdown-target") || "";
+    var fixedTarget = new Date(targetValue).getTime();
+    countdown.setAttribute("data-countdown-resolved-target", String(fixedTarget));
+    return fixedTarget;
+  }
+
+  var countdowns = Array.prototype.slice.call(document.querySelectorAll(".sales-countdown[data-countdown-target]"));
+  if (countdowns.length === 0) return;
+  countdowns.forEach(updateCountdown);
+  window.setInterval(function () {
+    countdowns.forEach(updateCountdown);
+  }, 1000);
+})();
+</script>
+
+
+</body>
+</html>
